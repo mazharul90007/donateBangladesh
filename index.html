@@ -24,7 +24,7 @@
             </div>
             <div class="justify-end flex gap-1 md:gap-2">
                 <img src="assets/images/coin.png" alt="">
-                <p><span class="text-xl">5500</span> BDT</p>
+                <p><span id="remainingMoney" class="text-xl">5500</span> BDT</p>
             </div>
         </nav>
     </header>
@@ -37,7 +37,7 @@
             </div>
         </section>
         <!-- Donation and History button area end -->
-        <!-- Card section start -->
+        <!-- Donation section start -->
         <section>
             <!-- card 01 -->
             <div class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
@@ -47,28 +47,52 @@
                 <div class="card-body p-0 flex flex-col justify-between">
                     <div class="flex  items-center gap-1 md:gap-2 bg-gray-100 w-fit px-3 py-1 rounded-md">
                         <img src="assets/images/coin.png" alt="">
-                        <p class=""><span>0</span> BDT</p>
+                        <p class=""><span id="totalDonation">0</span> BDT</p>
                     </div>
-                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="text-[16px] font-light"> The recent floods in       Noakhali have caused significant damage to
+                    <h2 id="card-title" class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-[16px] font-light"> The recent floods in Noakhali have caused significant damage to
                         homes infrastructure. Your donation will help provide essential supplies and to those affected
                         by this disaster. Every contribution, big or small, makes difference. Please join us in
                         supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
-                    <button class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold">Donate
+                    <input id="donationAmount" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered" required />
+                    <button id="donate-btn"
+                        class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold">Donate
                         Now</button>
 
                 </div>
             </div>
         </section>
-        <!-- Card section end -->
+        <!-- Donation section end -->
+        <!-- History section start -->
+        <section>
+            <div id="history">
+
+            </div>
+        </section>
+        <!-- History section end -->
+        <section>
+            <div id="modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+                <div class="bg-white p-6 rounded shadow-xl text-center flex flex-col items-center justify-center gap-3">
+                    <h2 class="text-xl font-semibold">Congrates!</h2>
+                    <img src="assets/images/coin.png" alt="">
+                    <p>You Have Donated for HumanKind</p>
+                    <h3 class="text-xl font-semibold">Successfully</h3>
+                    <button id="closeModal"
+                        class="mt-4 bg-gray-300 text-white px-4 py-2 rounded hover:bg-red-400 transition duration-300">
+                        Close Confirmation
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 
-
+    <script src="assets/js/utilities.js"></script>
     <script src="assets/js/home.js"></script>
+    <script src="assets/js/toggle.js"></script>
 </body>
 
 </html>
