@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-[#f9f7f3] mb-8">
+        <nav class=" w-[96%] md:w-[90%] mx-auto grid grid-cols-3 items-center py-3">
+            <div class="justify-start">
+                <button id="home"
+                    class=" text-[16px] md:text-xl font-semibold bg-lime-400 px-4 md:px-6 py-2 md:py-3 rounded-lg">Home</button>
+            </div>
+            <div class="flex justify-center items-center gap-1 md:gap-3">
+                <img src="assets/images/logo.png" alt="">
+                <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+            </div>
+            <div class="justify-end flex gap-1 md:gap-2">
+                <img src="assets/images/coin.png" alt="">
+                <p><span id="remainingMoney" class="text-xl">5500</span> BDT</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="w-[96%] md:w-[90%] mx-auto">
+            <h3 class="text-3xl font-semibold mb-8">Important FAQ</h3>
+            <div class="flex flex-col gap-2 border border-lime-300 p-6 rounded-xl">
+                <div class="collapse collapse-arrow bg-base-200 shadow-md border border-purple-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is Donate Bangladesh?</div>
+                    <div class="collapse-content">
+                        <p><span class ="text-xl font-semibold">Answer: </span>Donate Bangladesh is a platform dedicated to raising funds to support people affected by the recent floods in Bangladesh. Our mission is to provide relief and essential supplies to those in need.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 shadow-md border border-purple-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How will my donation be used?</div>
+                    <div class="collapse-content">
+                        <p><span class ="text-xl font-semibold">Answer: </span>Your donation will go directly towards providing food, clean water, medical supplies, shelter, and other necessary items to the flood-affected communities in Bangladesh.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 shadow-md border border-purple-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Is my donation tax-deductible?</div>
+                    <div class="collapse-content">
+                        <p><span class ="text-xl font-semibold">Answer: </span>Yes, all donations made through Donate Bangladesh are tax-deductible to the extent allowed by law. You will receive a receipt via email for your records.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 shadow-md border border-purple-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Can I donate items instead of money?</div>
+                    <div class="collapse-content">
+                        <p><span class ="text-xl font-semibold">Answer: </span>Currently, we are only accepting monetary donations, as this allows us to quickly and efficiently purchase supplies in bulk to meet the urgent needs of flood victims.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 shadow-md border border-purple-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How can I ensure my donation is being used responsibly?</div>
+                    <div class="collapse-content">
+                        <p><span class ="text-xl font-semibold">Answer: </span>We are committed to transparency and accountability. Regular updates on how the funds are being utilized, along with photos and reports from the ground, will be shared on our website and social media platforms.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 shadow-md border border-purple-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Can I volunteer to help?</div>
+                    <div class="collapse-content">
+                        <p><span class ="text-xl font-semibold">Answer: </span>Yes, we welcome volunteers! You can help by spreading the word, organizing fundraising events, or offering on-site assistance in the affected areas if you’re able. Please contact us through our volunteer page for more information.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <script src="assets/js/blog.js"></script>
+</body>
+
+</html>

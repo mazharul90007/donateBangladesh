@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +15,7 @@
     <header class="bg-[#f9f7f3]">
         <nav class=" w-[96%] md:w-[90%] mx-auto grid grid-cols-3 items-center py-3">
             <div class="justify-start">
-                <button
+                <button id="blog"
                     class=" text-[16px] md:text-xl font-semibold bg-lime-400 px-4 md:px-6 py-2 md:py-3 rounded-lg">Blog</button>
             </div>
             <div class="flex justify-center items-center gap-1 md:gap-3">
@@ -32,13 +32,13 @@
         <!-- Donation and History button area start -->
         <section class="my-7">
             <div class="w-full flex justify-center gap-4">
-                <button class="btn md:btn-lg border border-gray-300 shadow-lg">Donation</button>
-                <button class="btn md:btn-lg border-gray-300 shadow-lg">History</button>
+                <button id="donation-button" class="btn md:btn-lg border border-gray-300 shadow-lg">Donation</button>
+                <button id="history-button" class="btn md:btn-lg border-gray-300 shadow-lg">History</button>
             </div>
         </section>
         <!-- Donation and History button area end -->
         <!-- Donation section start -->
-        <section>
+        <section id="donation-section">
             <!-- card 01 -->
             <div class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
                 <figure>
@@ -57,7 +57,7 @@
                     <input id="donationAmount" type="number" placeholder="Write Donation Amount"
                         class="input input-bordered" required />
                     <button id="donate-btn"
-                        class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold">Donate
+                        class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold shadow-md">Donate
                         Now</button>
 
                 </div>
@@ -65,7 +65,7 @@
         </section>
         <!-- Donation section end -->
         <!-- History section start -->
-        <section>
+        <section id="history-section" class="hidden">
             <div id="history">
 
             </div>

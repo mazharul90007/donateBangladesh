@@ -27,7 +27,7 @@ document.getElementById('donate-btn').addEventListener('click', () => {
 
             historyCard.innerHTML =
                 `<div class=" border border-gray-300 p-4 rounded-lg shadow-lg bg-lime-50 mb-3 ">
-                    <h3 class="text-xl md:text-2xl font-semibold">${donationAmount} Taka is Donated for ${cardTitle}</h3> 
+                    <h3 class="text-xl md:text-2xl font-semibold"><span class = "text-green-700">${donationAmount} </span>Taka is Donated for ${cardTitle}</h3> 
                     <p class =" text-gray-500 text-[16px] md:text-xl">Donate Time: ${time}</p>
                 </div>`;
 

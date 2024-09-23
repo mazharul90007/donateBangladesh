@@ -18,3 +18,11 @@ function getInnerTextById(id){
     const getInnerTextValue = document.getElementById(id).innerText;
     return getInnerTextValue;
 }
+
+//show a section
+function showSection(id){
+    document.getElementById('donation-section').classList.add("hidden");
+    document.getElementById('history-section').classList.add("hidden");
+    document.getElementById(id).classList.remove("hidden");
+
+}
