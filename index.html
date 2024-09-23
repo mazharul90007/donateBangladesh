@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header class="bg-[#f9f7f3]">
-        <nav class=" w-[96%] md:w-[90%] mx-auto grid grid-cols-3 items-center py-3">
+    <header class="bg-[#f9f7f3] sticky top-0 z-30">
+        <nav class=" w-[96%] md:w-[90%] mx-auto grid grid-cols-3 items-center py-4">
             <div class="justify-start">
                 <button id="blog"
                     class=" text-[16px] md:text-xl font-semibold bg-lime-400 px-4 md:px-6 py-2 md:py-3 rounded-lg">Blog</button>
@@ -28,9 +28,9 @@
             </div>
         </nav>
     </header>
-    <main class="w-[96%] md:w-[90%] mx-auto ">
+    <main class="">
         <!-- Donation and History button area start -->
-        <section class="my-7">
+        <section class="my-7 sticky top-20 z-20 bg-white bg-opacity-30 backdrop-blur-sm py-5">
             <div class="w-full flex justify-center gap-4">
                 <button id="donation-button" class="btn md:btn-lg border border-gray-300 bg-lime-300 shadow-lg">Donation</button>
                 <button id="history-button" class="btn md:btn-lg border-gray-300 shadow-lg">History</button>
@@ -38,7 +38,7 @@
         </section>
         <!-- Donation and History button area end -->
         <!-- Donation section start -->
-        <section id="donation-section" class="mb-20 flex flex-col gap-4">
+        <section id="donation-section" class="w-[96%] md:w-[90%] mx-auto  mb-20 flex flex-col gap-4">
             <!-- card 01 -->
             <div id="cardArea" class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
                 <figure>
@@ -125,7 +125,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="py-12 bg-[#f9f7f3]">
 
     </footer>
     <script src="assets/js/utilities.js"></script>
