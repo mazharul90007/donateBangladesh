@@ -32,15 +32,15 @@
         <!-- Donation and History button area start -->
         <section class="my-7">
             <div class="w-full flex justify-center gap-4">
-                <button id="donation-button" class="btn md:btn-lg border border-gray-300 shadow-lg">Donation</button>
+                <button id="donation-button" class="btn md:btn-lg border border-gray-300 bg-lime-300 shadow-lg">Donation</button>
                 <button id="history-button" class="btn md:btn-lg border-gray-300 shadow-lg">History</button>
             </div>
         </section>
         <!-- Donation and History button area end -->
         <!-- Donation section start -->
-        <section id="donation-section">
+        <section id="donation-section" class="mb-20 flex flex-col gap-4">
             <!-- card 01 -->
-            <div class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
+            <div id="cardArea" class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
                 <figure>
                     <img src="assets/images/noakhali.png" alt="">
                 </figure>
@@ -59,7 +59,46 @@
                     <button id="donate-btn"
                         class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold shadow-md">Donate
                         Now</button>
+                </div>
+            </div>
 
+            <!-- card 02 -->
+            <div id="cardArea2" class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
+                <figure>
+                    <img src="assets/images/feni.png" alt="">
+                </figure>
+                <div class="card-body p-0 flex flex-col justify-between">
+                    <div class="flex  items-center gap-1 md:gap-2 bg-gray-100 w-fit px-3 py-1 rounded-md">
+                        <img src="assets/images/coin.png" alt="">
+                        <p class=""><span id="totalDonation2">0</span> BDT</p>
+                    </div>
+                    <h2 id="card-title2" class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="text-[16px] font-light"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <input id="donationAmount2" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered" required />
+                    <button id="donate-btn2"
+                        class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold shadow-md">Donate
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- card 03 -->
+            <div id="cardArea3" class="card grid md:grid-cols-2 gap-4 lg:card-side border border-gray-300 p-4">
+                <figure>
+                    <img src="assets/images/quota-protest.png" alt="">
+                </figure>
+                <div class="card-body p-0 flex flex-col justify-between">
+                    <div class="flex  items-center gap-1 md:gap-2 bg-gray-100 w-fit px-3 py-1 rounded-md">
+                        <img src="assets/images/coin.png" alt="">
+                        <p class=""><span id="totalDonation3">0</span> BDT</p>
+                    </div>
+                    <h2 id="card-title3" class="card-title">Aid for Injured in the Quota Movement</h2>
+                    <p class="text-[16px] font-light"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <input id="donationAmount3" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered" required />
+                    <button id="donate-btn3"
+                        class="w-full flex justify-center bg-lime-300 p-3 rounded-lg text-xl font-semibold shadow-md">Donate
+                        Now</button>
                 </div>
             </div>
         </section>
@@ -89,9 +128,10 @@
     <footer>
 
     </footer>
-
     <script src="assets/js/utilities.js"></script>
     <script src="assets/js/home.js"></script>
+    <script src="assets/js/card2.js"></script>
+    <script src="assets/js/card3.js"></script>
     <script src="assets/js/toggle.js"></script>
 </body>
 
